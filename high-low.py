@@ -4,7 +4,6 @@ lower=int(input("enter lower bound"))
 upper=int(input("enter upper bound"))
 print("You have 5 guesses to guess the number")
 x=random.randint(lower,upper)
-print(x)
 guess=0
 if upper<lower:
     print("Error, upper bound is smaller than lower bound")
@@ -23,7 +22,8 @@ else:
             print("Congratulations, you guessed the number in",guess, "trial(s).")
             break
         else:
-            print("No out of range")
+            print("Number out of range")
+
 
 
 
